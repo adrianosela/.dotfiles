@@ -1,6 +1,9 @@
 # set up GOPATH
 export GOPATH=$HOME/go
 
+# set up Java Jar path (this is custom)
+export JARPATH=$HOME/jars
+
 # add custom binary paths to PATH
 PATH=$PATH:~/bin
 
