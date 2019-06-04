@@ -4,3 +4,4 @@ cd
 mkdir dump
 mkdir bin
 mkdir go
+mkdir jars
