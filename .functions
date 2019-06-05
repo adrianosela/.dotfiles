@@ -3,3 +3,19 @@ gitwipe () {
   git stash
   git stash drop
 }
+
+# gpg related functions
+keys () {
+  gpg --list-key
+}
+import () {
+  gpg --keyserver gpg.mozilla.org --recv-keys "$1"
+}
+encrypt () {
+  gpg --output $1.gpg --encrypt --recipient $2 $1
+}
+
+# foxsec-pipeline shortcuts
+fmt () {
+  ~/go/src/github.com/mozilla-services/foxsec-pipeline/bin/m spotless:apply
+}
